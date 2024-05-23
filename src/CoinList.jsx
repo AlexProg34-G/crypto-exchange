@@ -24,7 +24,7 @@ function CoinList() {
           <td>1</td>
           <td>Mark</td>
           <td>Otto</td>
-          <td>@mdo</td>
+          <td>@Gugo</td>
           <td>@mdo</td>
           <td>@mdo</td>
           <td>@mdo</td>
