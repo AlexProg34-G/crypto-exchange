@@ -6,14 +6,13 @@ function SubHeader() {
   return (
     <Container>
       <Row>
-        <Col>MARKET CAP</Col>
-        <Col>EXCHANGE VOL</Col>
-        <Col>1 of 3</Col>
-        <Col>1 of 4</Col>
-        <Col>1 of 5</Col>
-        <Col>1 of 6</Col>
+        <Col>MARKET CAP $2.47T</Col>
+        <Col>EXCHANGE VOL $81.07B</Col>
+        <Col>Assets 2,297</Col>
+        <Col>EXCHANGE 43</Col>
+        <Col>Markets 9,093</Col>
+        <Col>BTC DOM INDEX 53.8%</Col>
       </Row>
-     
     </Container>
   );
 }

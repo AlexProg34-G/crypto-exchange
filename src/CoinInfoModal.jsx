@@ -14,8 +14,8 @@ aria-labelledby="example-modal-sizes-title-lg"
     Large Modal
   </Modal.Title>
 </Modal.Header>
-<Modal.Body>...</Modal.Body>
+<Modal.Body>Body Modal...</Modal.Body>
 </Modal>
 );
 }
-export default SubHeader;
+export default CoinInfoModal;

@@ -1,11 +1,12 @@
-import Table from 'react-bootstrap/Table';
 import React from "react";
+import Table from 'react-bootstrap/Table';
 import CoinInfoModal from "./CoinInfoModal";
 
 function CoinList() {
-  const [ showInModal, setShowInfoModal] = React.useState(false);
+  const [ showInfoModal, setShowInfoModal] = React.useState(false);
   
     return (
+      <>
     <Table striped bordered hover>
       <thead>
         <tr>
@@ -22,18 +23,19 @@ function CoinList() {
       <tbody>
         <tr onClick={() => setShowInfoModal(true)}>
           <td>1</td>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
+          <td>BitCoin</td>
+          <td>680000</td>
+          <td>@XXX</td>
+          <td>@XXX</td>
+          <td>@XXX</td>
+          <td>@XXX</td>
+          <td>@XXX</td>
         </tr>
       
       </tbody>
     </Table>
-    CoinInfoModal show = {showInfoModal} setShow={setShowInfoModal};
+    <CoinInfoModal show = {showInfoModal} setShow={setShowInfoModal}/>
+    </>
   );
 }
 
