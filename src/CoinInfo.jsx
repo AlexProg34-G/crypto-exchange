@@ -1,8 +1,12 @@
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Chart from"./Chart";
+
 
 function CoinInfo() {
+
   return (
+    <>
     <Row>
       <col>
         <Row>
@@ -20,7 +24,11 @@ function CoinInfo() {
         <div>Change -3% </div>
       </col>
     </Row>
-  );
+    <Row>
+        <Chart>ChartInfo</Chart>
+    </Row>
+  </>
+);
 }
 
 export default CoinInfo;
