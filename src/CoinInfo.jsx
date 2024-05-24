@@ -1,5 +1,6 @@
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import coinInfo from "./coinInfo";
 
 function CoinInfo() {
   return (
@@ -8,7 +9,7 @@ function CoinInfo() {
         <Row>
           Logo
           <Col>Logo</Col>
-          <Col>Bitcoin</Col>
+          <Col>{coinData.name}</Col>
         </Row>
       </col>
       <col>
