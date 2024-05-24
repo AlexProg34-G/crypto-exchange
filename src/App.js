@@ -1,18 +1,25 @@
 //import logo from './logo.svg';
-//import './App.css';
-//import TestComponenet from './TestComponenet';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Container from "react-bootstrap/Container";
-import Header from "./Header";
-import SubHeader from './SubHeader';
-import CoinList from './CoinList';
+import './App.css';
+
+
+//import 'bootstrap/dist/css/bootstrap.min.css';
+//import Container from "react-bootstrap/Container";
+//import Header from "./Header";
+//import SubHeader from './SubHeader';
+//import CoinList from './CoinList';
+import MotherComponenet from "./MotherComponenet";
+import ChildComponent from "./ChildComponent";
 
 function App() {
-  return  <Container>
-    <Header/>
-    <SubHeader/>
-    <CoinList/>
-    </Container>;
+  return (
+    <div className="App">
+      <header className='App-header'>
+        <MotherComponenet>
+          <ChildComponent />
+        </MotherComponenet>
+    </header>
+  </div >
+  );
 }
 
 export default App;
