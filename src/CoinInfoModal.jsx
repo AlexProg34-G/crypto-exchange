@@ -1,7 +1,7 @@
 import Modal from "react-bootstrap/Modal";
 import CoinInfo from "./CoinInfo";
 
-function CoinInfoModal({ show, setShow }) {
+function CoinInfoModal({ show, setShow, coiData }) {
   return (
     <Modal
       size="lg"
@@ -13,7 +13,7 @@ function CoinInfoModal({ show, setShow }) {
         <Modal.Title id="example-modal-sizes-title-lg">Large Modal</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <CoinInfo />
+        <CoinInfo coinData={coiData}/>
       </Modal.Body>
     </Modal>
   );
