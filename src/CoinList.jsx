@@ -4,6 +4,12 @@ import CoinInfoModal from "./CoinInfoModal";
 
 function CoinList() {
   const [ showInfoModal, setShowInfoModal] = React.useState(false);
+  const [coinData, setCoinData] = React.useState(0);
+
+  const handleOnCick = (name) => {
+    setShowInfoModal(true);
+    setCoinData({name});
+  }
   
     return (
       <>
@@ -21,7 +27,7 @@ function CoinList() {
         </tr>
       </thead>
       <tbody>
-        <tr onClick={() => setShowInfoModal(true)}>
+        <tr onClick={() => handleOnCick("Bitcoin")}>
           <td>1</td>
           <td>BitCoin</td>
           <td>680000</td>
