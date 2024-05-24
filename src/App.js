@@ -2,10 +2,10 @@
 //import './App.css';
 //import TestComponenet from './TestComponenet';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Container from "react-bootstrap/Container";
-import Header from "./Header";
-import SubHeader from './SubHeader';
-import CoinList from './CoinList';
+//import Container from "react-bootstrap/Container";
+//import Header from "./Header";
+//import SubHeader from './SubHeader';
+//import CoinList from './CoinList';
 
 function App() {
   return  <Container>
