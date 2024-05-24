@@ -1,5 +1,5 @@
 import Modal from "react-bootstrap/Modal";
-import CoinInfo from "./CoinInfo";
+import CoinInfo from "./Body/CoinInfo";
 
 function CoinInfoModal({ show, setShow, coiData }) {
   return (
