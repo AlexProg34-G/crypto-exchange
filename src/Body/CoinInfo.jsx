@@ -4,7 +4,7 @@ import Chart from"./Chart";
 
 
 
-function CoinInfo() {
+function CoinInfo(name) {
 
   return (
     <>
@@ -13,7 +13,7 @@ function CoinInfo() {
         <Row>
           Logo
           <Col>Logo</Col>
-          <Col>{coinData.name}</Col>
+          <Col>{name}</Col>
         </Row>
       </col>
       <col>
