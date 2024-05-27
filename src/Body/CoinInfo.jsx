@@ -1,13 +1,10 @@
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Chart from"./Chart";
-
-
+import Chart from ". /Body/Chart";
 
 function CoinInfo(name) {
-
-  return (
-    <>
+  return(
+  <>
     <Row>
       <col>
         <Row>
@@ -26,10 +23,10 @@ function CoinInfo(name) {
       </col>
     </Row>
     <Row>
-        <Chart>ChartInfo</Chart>
+      <Chart>ChartInfo</Chart>
     </Row>
-  </>
-);
+  </>)
+  ;
 }
 
 export default CoinInfo;
