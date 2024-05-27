@@ -1,6 +1,6 @@
 import React from "react";
 import Table from "react-bootstrap/Table";
-import CoinInfoModal from "./CoinInfoModal";
+import CoinInfoModal from "./Body/CoinInfoModal";
 
 function CoinList() {
   const [showInfoModal, setShowInfoModal] = React.useState(false);

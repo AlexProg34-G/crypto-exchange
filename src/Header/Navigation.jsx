@@ -3,8 +3,10 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Button from "react-bootstrap/Button";
+import React from "react";
 
 function Navigation() {
+  const [show, setShow ] = React.useState(false);
   return (
     <Navbar className="bg-body-tertiary">
       <Container>
@@ -34,8 +36,8 @@ function Navigation() {
             </NavDropdown.Item>
           </NavDropdown>
         </Nav>
-          <Navbar.Text>
-            Signed in as: <a href="#login">Mark Otto</a>
+          <Navbar.Text className="justify-content-end">
+            <Button onClick={() => setShow(true)} variant="primary" >Search</Button>
           </Navbar.Text>
       </Container>
     </Navbar>

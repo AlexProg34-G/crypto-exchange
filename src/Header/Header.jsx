@@ -1,14 +1,14 @@
 import Navigation from "./Navigation";
-import NaviSubHeader  from "./SubHeader";
+import SubHeader from "./SubHeader";
+//import NaviSubHeader from "./SubHeader";
 
-function Header () {
-
-    return (
-
-        <>
-        
-        
-        
-        </>
-    )
+function Header() {
+  return (
+    <>
+      <Navigation />
+      <SubHeader />
+    </>
+  );
 }
+
+export default Header;

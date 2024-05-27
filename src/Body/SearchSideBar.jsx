@@ -3,7 +3,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 function SearchSideBar({show, handleClose}){
 
     return (
-        <Offcanvas show={show} onHide={handleClose}>
+        <Offcanvas show={show} onHide={handleClose} placement='end'>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Offcanvas</Offcanvas.Title>
         </Offcanvas.Header>
