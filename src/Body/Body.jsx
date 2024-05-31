@@ -1,6 +1,7 @@
 import CoinList from "./CoinList";
-import SearchSideBar from "./Body/SearchSideBar/";
+import SearchSideBar from "./SearchSideBar";
 import CoinInfo from "./CoinInfo/CoinInfo";
+
 
 function Body(props) {
   return (
