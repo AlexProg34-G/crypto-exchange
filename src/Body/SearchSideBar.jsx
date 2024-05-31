@@ -15,5 +15,4 @@ function SearchSideBar({ showSideBar, setShowSideBar }) {
     </Offcanvas>
   );
 }
-
 export default SearchSideBar;
