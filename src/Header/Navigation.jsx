@@ -3,20 +3,18 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Button from "react-bootstrap/Button";
+import React from "react";
 
-
-function Navigation({ setShowSideBar, setPage }) {
-  const handleClick = () => {
-    setPage("main");
-  };
-
+function Navigation() {
+  const [show, setShow ] = React.useState(false);
   return (
     <Navbar className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home" onClick={handleClick}>
+        <Navbar.Brand href="#home">
           <img
             alt=""
-            src="https://react-bootstrap.netlify.app/img/logo.svg"
+            //src="https://react-bootstrap.netlyfy.app/img/logo.svg"
+            src="./logo.svg"
             width="30"
             height="30"
             className="d-inline-block align-top"
@@ -24,9 +22,7 @@ function Navigation({ setShowSideBar, setPage }) {
           React Bootstrap
         </Navbar.Brand>
         <Nav className="me-auto">
-          <Nav.Link href="#home" onClick={handleClick}>
-            Home
-          </Nav.Link>
+          <Nav.Link href="#home">Home</Nav.Link>
           <Nav.Link href="#link">Link</Nav.Link>
           <NavDropdown title="Dropdown" id="basic-nav-dropdown">
             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -40,14 +36,11 @@ function Navigation({ setShowSideBar, setPage }) {
             </NavDropdown.Item>
           </NavDropdown>
         </Nav>
-        <Navbar.Text className="justify-content-end">
-          <Button onClick={() => setShowSideBar(true)} variant="primary">
-            Search
-          </Button>
-        </Navbar.Text>
+          <Navbar.Text className="justify-content-end">
+            <Button onClick={() => setShow(true)} variant="primary" >Search</Button>
+          </Navbar.Text>
       </Container>
     </Navbar>
   );
 }
-
 export default Navigation;
