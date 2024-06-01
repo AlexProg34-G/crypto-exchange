@@ -1,21 +1,23 @@
-//import logo from './logo.svg';
-
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/Container";
 import Header from "./Header";
-//import SubHeader from './Header/SubHeader';
-import CoinList from './Body/CoinList';
-import React from 'react';
-
+import Body from "./Body";
 
 function App() {
-  const [showSideBar, setShowSideBar] = React.useState
-  return (
-    <Container >
-      <Header setShowSideBar={setShowSideBar}/>
+  const [showSideBar, setShowSideBar] = React.useState(false);
+  const [page, setPage] = React.useState("main");
 
-      <CoinList />
-    </Container >
+  return (
+    <Container>
+      <Header setShowSideBar={setShowSideBar} page={page} setPage={setPage} />
+      <Body
+        showSideBar={showSideBar}
+        setShowSideBar={setShowSideBar}
+        setPage={setPage}
+        page={page}
+      />
+    </Container>
   );
 }
 

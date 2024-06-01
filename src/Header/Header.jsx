@@ -1,12 +1,12 @@
 import Navigation from "./Navigation";
-import SubHeader from "./SubHeader";
-//import NaviSubHeader from "./SubHeader";
+import SubHeader from "./SubHeader/Main";
+import { mainSubHeader, pageSubHeader } from "./SubHeader/constants";
 
-function Header() {
+function Header(props) {
   return (
     <>
-      <Navigation />
-      <SubHeader />
+      <Navigation {...props} />
+      <SubHeader data={props.page === "main" ? mainSubHeader : pageSubHeader} />
     </>
   );
 }

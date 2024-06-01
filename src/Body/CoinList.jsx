@@ -1,16 +1,22 @@
 import React from "react";
 import Table from "react-bootstrap/Table";
-import CoinInfoModal from "./Body/CoinInfoModal";
+import CoinInfoModal from "./CoinInfo/CoinInfoModal";
+import { getAssets } from "../api/assets";
+import { coinDataFormat } from "./utils";
 
-function CoinList() {
+function CoinList({ setPage }) {
   const [showInfoModal, setShowInfoModal] = React.useState(false);
-  
   const [coinData, setCoinData] = React.useState({});
+  const [coinList, setCoinList] = React.useState([]);
 
-  const handleOnCick = (name) => {
+  const handleOnClick = (coin) => {
     setShowInfoModal(true);
-    setCoinData({ name });
+    setCoinData(coin);
   };
+
+  React.useEffect(() => {
+    getAssets().then((json) => setCoinList(json.data));
+  }, []);
 
   return (
     <>
@@ -21,29 +27,35 @@ function CoinList() {
             <th>Name</th>
             <th>Price</th>
             <th>Market Cap</th>
-            <th>VWAP</th>
+            <th>VWAP (24H)</th>
             <th>Supply</th>
-            <th>Volume</th>
-            <th>Change</th>
+            <th>Volume (25H)</th>
+            <th>Change (24H)</th>
           </tr>
         </thead>
         <tbody>
-          <tr onClick={() => handleOnCick("Bitcoin")}>
-            <td>1</td>
-            <td>BitCoin</td>
-            <td>680000</td>
-            <td>@XXX</td>
-            <td>@XXX</td>
-            <td>@XXX</td>
-            <td>@XXX</td>
-            <td>@XXX</td>
-          </tr>
+          {coinList.map((coin) => {
+            const formatedCoin = coinDataFormat(coin);
+            return (
+              <tr key={formatedCoin.id} onClick={() => handleOnClick(coin)}>
+                <td>{formatedCoin.rank}</td>
+                <td>{formatedCoin.name}</td>
+                <td>{formatedCoin.priceUsd}</td>
+                <td>{formatedCoin.marketCapUsd}</td>
+                <td>{formatedCoin.vwap24Hr}</td>
+                <td>{formatedCoin.supply}</td>
+                <td>{formatedCoin.volumeUsd24Hr}</td>
+                <td>{formatedCoin.changePercent24Hr}</td>
+              </tr>
+            );
+          })}
         </tbody>
       </Table>
       <CoinInfoModal
         show={showInfoModal}
         setShow={setShowInfoModal}
         coinData={coinData}
+        setPage={setPage}
       />
     </>
   );
