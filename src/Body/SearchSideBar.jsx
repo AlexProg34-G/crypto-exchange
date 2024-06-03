@@ -4,7 +4,7 @@ import SearchForm from "./SearchForm";
 function SearchSideBar({ showSideBar, setShowSideBar }) {
   const handleClose = () => setShowSideBar(false);
 
-   return (
+  return (
     <Offcanvas show={showSideBar} onHide={handleClose} placement="end">
       <Offcanvas.Header closeButton>
         <Offcanvas.Title>Search</Offcanvas.Title>
@@ -15,4 +15,5 @@ function SearchSideBar({ showSideBar, setShowSideBar }) {
     </Offcanvas>
   );
 }
+
 export default SearchSideBar;
