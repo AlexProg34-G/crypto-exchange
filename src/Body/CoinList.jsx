@@ -4,6 +4,13 @@ import CoinInfoModal from "./CoinInfo/CoinInfoModal";
 import { getAssets } from "../api/assets";
 import { coinDataFormat } from "./utils";
 import ErrorModal from "../ErrorModal";
+import {NumericFormat} from "react-number-format";
+
+const Number = ({value}) =>(
+  <NumericFormat value = {value}>
+    display
+  </NumericFormat>
+);
 
 function CoinList({ setPage }) {
   const [showInfoModal, setShowInfoModal] = React.useState(false);
