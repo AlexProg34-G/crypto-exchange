@@ -3,24 +3,29 @@ import Table from "react-bootstrap/Table";
 import CoinInfoModal from "./CoinInfo/CoinInfoModal";
 import { getAssets } from "../api/assets";
 import { coinDataFormat } from "./utils";
+import ErrorModal from "../ErrorModal";
 
 function CoinList({ setPage }) {
   const [showInfoModal, setShowInfoModal] = React.useState(false);
   const [coinData, setCoinData] = React.useState({});
   const [coinList, setCoinList] = React.useState([]);
+  const [errorMessage, setErrorMessage] = React.useState(null);
 
   const handleOnClick = (coin) => {
     setShowInfoModal(true);
     setCoinData(coin);
+    
   };
 
   React.useEffect(() => {
-    getAssets().then((json) => setCoinList(json.data));
+    getAssets()
+      .then((json) => setCoinList(json.data))
+      .catch((error) => setErrorMessage(error));
   }, []);
 
   return (
     <>
-      <Table striped bordered hover>
+      <Table striped bordered hover responsive>
         <thead>
           <tr>
             <th>Rank</th>
@@ -56,6 +61,11 @@ function CoinList({ setPage }) {
         setShow={setShowInfoModal}
         coinData={coinData}
         setPage={setPage}
+      />
+      <ErrorModal
+        show={!!errorMessage}
+        handleClose={() => setErrorMessage(null)}
+        errorMessage={errorMessage}
       />
     </>
   );
