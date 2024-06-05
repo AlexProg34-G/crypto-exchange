@@ -14,6 +14,7 @@ function CoinList({ setPage }) {
   const handleOnClick = (coin) => {
     setShowInfoModal(true);
     setCoinData(coin);
+    
   };
 
   React.useEffect(() => {
