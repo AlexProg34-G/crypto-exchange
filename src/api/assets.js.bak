@@ -41,3 +41,4 @@ export const getAssetsById = async (id) => {
 
   return data;
 };
+

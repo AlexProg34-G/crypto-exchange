@@ -16,5 +16,4 @@ function ErrorModal({ show, handleClose, errorMessage }) {
     </Modal>
   );
 }
-
 export default ErrorModal;
