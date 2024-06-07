@@ -29,6 +29,7 @@ function Chart({ coinData, periodParams }) {
     }
   }, [periodParams]);
 
+  
   React.useEffect(() => {
     const { start, end } = buildPeriod(period);
     getAssetsHistory(coinData.id, period.interval, start, end)
