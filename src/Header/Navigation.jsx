@@ -33,8 +33,11 @@ function Navigation({ setShowSideBar }) {
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="flex-grow-1 pe-3 my-auto">
-              <Link to="/" className="nav-link">
+            <Link to="/" className="nav-link">
                 Home
+              </Link>
+              <Link to="/contact" className="nav-link">
+                Contact
               </Link>
               <Nav.Link href="#link">Link</Nav.Link>
               <NavDropdown title="Dropdown" id="basic-nav-dropdown">
