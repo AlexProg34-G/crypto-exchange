@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <>
 
-      {!!formState.status && <div className="py-2">Current status is: {formState.status == 'not_initialized'? 'Fill the form' : formState.status}
+      {!!formState.status && <div className="py-2">Current status : {formState.status == 'not_initialized'? 'Fill the form' : formState.status}
       </div>}
       <form onSubmit={getFormSubmitHandler()}>
         <div className="pt-0 mb-3">
