@@ -25,6 +25,7 @@ function Navigation() {
           <img
             alt=""
             //src="https://react-bootstrap.netlify.app/img/logo.svg"
+            
             src="https://tenor.com/view/bitcoin-gif-22294691.gif"
             
             width="30"
