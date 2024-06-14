@@ -4,9 +4,15 @@ import Form from "react-bootstrap/Form";
 import { periods } from "./CoinInfo/constants";
 import { Link } from "react-router-dom";
 import { searchAssets } from "../api/assets";
+import {useSelector, useDispatch} from "react-redux";
+import {setFoundCoins} from "..service/state";
 
 function SearchForm({ closeSideBar }) {
   console.log("SearchForm");
+
+  const dispatch = useDispatch();
+
+  const foundCoin = useSelector((state) => state.foundCoin);
 
   const [foundCoins, setFoundCoins] = React.useState([]);
   const [period, setPeriod] = React.useState(null);
@@ -52,8 +58,7 @@ function SearchForm({ closeSideBar }) {
               <div key={coin.id}>
                 <Link
                   to={`/coin/${coin.id}/${period}`}
-                  onClick={() => closeSideBar()}
-                >
+               >
                   {coin.name}
                 </Link>
               </div>
