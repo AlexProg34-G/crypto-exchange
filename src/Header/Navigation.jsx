@@ -24,12 +24,14 @@ function Navigation() {
         <Link to="/" className="navbar-brand">
           <img
             alt=""
-            src="https://react-bootstrap.netlify.app/img/logo.svg"
+            //src="https://react-bootstrap.netlify.app/img/logo.svg"
+            src="https://tenor.com/view/bitcoin-gif-22294691.gif"
+            
             width="30"
             height="30"
             className="d-inline-block align-top"
           />{" "}
-          React Bootstrap
+          <b>Crypto-currency exchange </b>
         </Link>
         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand`} />
         <Navbar.Offcanvas
