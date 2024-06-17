@@ -36,7 +36,7 @@ function CoinInfo({ coinData }) {
         <Col>
           <Row>
             <Col>Logo</Col>
-            <Col>{coinData?.name}</Col>
+            <Col>{coinData?.name? coinData?.name : coinInfo.rank}</Col>
           </Row>
         </Col>
         <Col>

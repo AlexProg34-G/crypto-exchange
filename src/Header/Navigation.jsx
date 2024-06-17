@@ -32,7 +32,7 @@ function Navigation() {
             height="30"
             className="d-inline-block align-top"
           />{" "}
-          <b>Crypto-currency exchange </b>
+          <b>CryptoXchange </b>
         </Link>
         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand`} />
         <Navbar.Offcanvas

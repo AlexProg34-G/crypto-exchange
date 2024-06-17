@@ -1,70 +1,89 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# CryptoXchange Application
 
-## Available Scripts
+CryptoXchange application is a cutting-edge crypto-currency exchange platform designed to provide users with a secure, user-friendly and efficient way to check and trade trade (in future) about 1000 of cryptocurrencies. Whether you are a beginner or a seasoned trader, CryptoXchange offers robust tools and features to manage your crypto transactions seamlessly.
 
-In the project directory, you can run:
+## Application site:
 
-### `npm start`
+### 'https://alexprog34-g.github.io/crypto-exchange'
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Key Features:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### User-Friendly Interface:
 
-### `npm test`
+- **Real-time Price Monitoring:** Users can monitor real-time prices to make informed decisions about currency conditions.
+- **Search Functionality:** Search functionality allows users to specify date, time and currency name parameters to retrieve price data.
+- **Cost-Effective Timeframes:** The application provides recommendations on the most cost-effective timeframes for currency usage.
+- **Data Analysis:** Users can analyze price history to better understand their trading patterns.
+- **Interface:** Intuitive design ensuring a smooth user experience.
+- **Navigation:**Easy navigation with a clean, modern layout.
+- **Customizable dashboard to track favorite coins and markets.(in development)**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Wide Range of Cryptocurrencies:
+- **Support for major cryptocurrencies like Bitcoin (BTC), Ethereum (ETH), Ripple (XRP), and many others.**
+- **Regular addition of new and emerging cryptocurrencies.**
 
-### `npm run build`
+### Advanced Trading Tools:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Real-time market data and charts.**
+- **Margin trading with leverage for experienced traders.**
+- **Advanced charting tools with technical information.**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Mobile App:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Fully functional mobile app for iOS and Android.
+- Trade on-the-go with real-time notifications and alerts.(in development)
+- Seamless synchronization with the web platform.
 
-### `npm run eject`
+### Fiat Support:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Buy and sell cryptocurrencies using fiat currencies like USD, EUR, etc.
+- Multiple payment methods including bank transfers, credit/debit cards, and more.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Technologies Used:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **React:** Used for building the user interface and managing search functionalities efficiently.
+- **React Forms:** Employed for creating and processing search criteria, enabling users to specify date and time parameters.
+- **React Hooks:** Used to manage state and side effects related to search queries and data retrieval.
+- **Context API:** Manages global state related to search parameters and electricity price data, ensuring seamless communication between components.
+- **React Router:** Handles client-side routing for navigation between search results and other views within the application.
+- **Redux:** Manages global state and facilitates predictable state management across the application.
+- **Recharts:** Utilized for data visualization, particularly for rendering interactive charts and graphs to display electricity price data.
+- **Back-end:** Information about currency received from [text](https://coincap.io/)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Local installation:
 
-## Learn More
+### `git clone https://github.com/AlexProg34-G/crypto-exchange`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Clone the repository from GitHub.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### `cd ecrypto-exchange`
 
-### Code Splitting
+Navigate to the project directory.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### run `npm install`
 
-### Analyzing the Bundle Size
+to install dependencies.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### run `npm start`
 
-### Making a Progressive Web App
+to start the development server.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Open your browser and visit http://localhost:3000 to access the application.
 
-### Advanced Configuration
+## How to use this application?
+On the main page, you can see the currency list and current prices and different indicators of currency exchange rate changes.
+Click on currency line for detailed flow-chart and additional info. In main menu You can find contacts and different actions.
+For return to main page click 'Home'.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Contributing:
 
-### Deployment
+Contributions are welcome! Feel free to submit bug reports, feature requests, or pull requests to help improve the project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Conclusion:
+CryptoXchange is the go-to platform for anyone interested in trading cryptocurrencies. With its robust features, high security, and user-centric design, it aims to be a leader in the cryptocurrency exchange market, providing a reliable and efficient trading experience for all users.
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
