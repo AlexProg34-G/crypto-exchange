@@ -51,22 +51,18 @@ CryptoXchange application is a cutting-edge crypto-currency exchange platform de
 - **Recharts:** Utilized for data visualization, particularly for rendering interactive charts and graphs to display electricity price data.
 - **Back-end:** Information about currency received from [text](https://coincap.io/)
 
-## Local installation:
+#### Local installation:
 
-### `git clone https://github.com/AlexProg34-G/crypto-exchange`
-
+##### `git clone https://github.com/AlexProg34-G/crypto-exchange`
 Clone the repository from GitHub.
 
-### `cd ecrypto-exchange`
-
+##### `cd crypto-exchange`
 Navigate to the project directory.
 
-### run `npm install`
-
+##### run `npm install`
 to install dependencies.
 
-### run `npm start`
-
+##### run `npm start`
 to start the development server.
 
 Open your browser and visit http://localhost:3000 to access the application.
